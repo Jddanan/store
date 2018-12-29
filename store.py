@@ -180,6 +180,5 @@ def get_products(id):
             return json.dumps({'STATUS': 'ERROR', 'MSG': 'Internal error'})
 
 
-#run(host='0.0.0.0', port=argv[1])
-if __name__ == "__main__":
-    run(host='localhost', port=7000)
+run(host='0.0.0.0', port=argv[1])
+
