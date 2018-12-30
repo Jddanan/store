@@ -155,7 +155,7 @@ def delete_product(id):
 def show_products():
     try:
         with connection.cursor() as cursor:
-            sql = 'SELECT * FROM product'
+            sql = 'SELECT * FROM products'
             cursor.execute(sql)
             connection.commit()
             products = cursor.fetchall()
@@ -181,4 +181,6 @@ def get_products(id):
 
 
 run(host='0.0.0.0', port=argv[1])
+#if __name__ == "__main__":
+#   run(host='localhost', port=7000)
 
